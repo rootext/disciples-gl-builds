@@ -7,6 +7,17 @@
 This patch/wrapper redirect legacy DirectDraw graphics into OpenGL and allows play games on modern PC with Windows 10 and 11. 
 Added proper windowed mode and several upscale filters for better gaming on modern screens.
 
+## Download
+
+### [DisciplesGL_2.0.0-dev](./../../raw/refs/heads/main/DisciplesGL_2.0.0-dev.7z)
+
+* Add Ctrl+Q hotkey to save game with date and time in file name
+* Update external dependecies (libpng and zlib)
+
+### [DisciplesGL_1.90](./../../raw/refs/heads/main/DisciplesGL_2.0.0-dev.7z)
+
+* Latest stable build
+
 ## Features & fixes
 * Games render via OpenGL
 * Games can now easily minimize on new OS
