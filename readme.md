@@ -9,7 +9,7 @@ Added proper windowed mode and several upscale filters for better gaming on mode
 
 ## Download
 
-### [DisciplesGL_2.0.0-dev.1](./../../raw/refs/heads/main/DisciplesGL_2.0.0-dev.1.7z)
+### [DisciplesGL_2.0.0-dev.2](./../../raw/refs/heads/main/DisciplesGL_2.0.0-dev.2.7z)
 
 * Add Ctrl+Q hotkey to save game with date and time in file name  
   Examples: QuickSave-20241101-102030.sg
@@ -23,6 +23,7 @@ Added proper windowed mode and several upscale filters for better gaming on mode
     | Subfolder
       |-Vaglan 1 - Highlands.sg
 ```
+* Add simple zoom on Ctrl+Wheel
 * Update external dependecies (libpng and zlib)
 
 ### [DisciplesGL_1.90](./../../raw/refs/heads/main/DisciplesGL_2.0.0-dev.7z)
