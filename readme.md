@@ -9,11 +9,14 @@ Added proper windowed mode and several upscale filters for better gaming on mode
 
 ## Download
 
-### [DisciplesGL_2.0.0-dev.2](./../../raw/refs/heads/main/DisciplesGL_2.0.0-dev.2.7z)
-
-* Add Ctrl+Q hotkey to save game with date and time in file name  
-  Examples: QuickSave-20241101-102030.sg
-* Load maps(quests) from all subfolders recursively  
+### [DisciplesGL_2.0.0-dev.3](./../../raw/refs/heads/main/DisciplesGL_2.0.0-dev.3.7z)
+* Add "Archive saves" option  
+  If enabled all saved games including autosaves are archived with name  
+  `~name-date-time-turn.sg`  
+  Exmaple: `~AutoSave-20241101-102030-1.sg`
+* Add Ctrl+Q hotkey to archive game even if automatic archiving is disabled  
+  Example: `~QuickSave-20241101-102030.sg`
+* Load quests (maps/saves) from all subfolders recursively  
   Example:  
 ```
   Export
