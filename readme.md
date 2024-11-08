@@ -1,23 +1,31 @@
-# Disciples I & Disciples II OpenGL Wrapper (+ Patch)
+# Disciples I & Disciples II OpenGL Wrapper
 
-> [!NOTE]
-> This repository is a fork of the project found at https://github.com/Verokster/DisciplesGL  
-> Verokster aka Verok is the original author of all code up to version 1.90
+This wrapper redirects legacy DirectDraw graphics into OpenGL, allowing you to play these games on modern PCs with Windows 10 and 11. 
+Added proper windowed mode and several upscale filters for a better gaming experience on modern screens, and much more.
 
-This patch/wrapper redirect legacy DirectDraw graphics into OpenGL and allows play games on modern PC with Windows 10 and 11. 
-Added proper windowed mode and several upscale filters for better gaming on modern screens.
+![Disciples II](/docs/d2display.png)
 
 ## Download
 
-### [DisciplesGL_2.0.0-dev.3](./../../raw/refs/heads/main/DisciplesGL_2.0.0-dev.3.7z)
-* Add "Archive saves" option  
-  If enabled all saved games including autosaves are archived with name  
-  `~name-date-time-turn.sg`  
-  Exmaple: `~AutoSave-20241101-102030-1.sg`
-* Add Ctrl+Q hotkey to archive game even if automatic archiving is disabled  
-  Example: `~QuickSave-20241101-102030.sg`
+### [DisciplesGL_2.0.0-dev.4](./../../raw/refs/heads/main/DisciplesGL_2.0.0-dev.4.7z)
+* Add `Ctrl+Q` hotkey to add an auto-incremented index to quick save  
+  Example: `QuickSave001.sg`
+* Add `Archive saves` option  
+  If enabled, all saved games, including auto saves and quick saves, are archived with the name
+  `~name-date-time-turn.sg` in the Archive directory  
+  Example:
+```
+  Archive
+  |-20241101
+    |~BossBattle!!!-20241101-122030-34.sg
+    |~QuickSave-20241101-112030-11.sg
+    |~AutoSave-20241101-102030-7.sg
+```
+* If `Shift` key is presed, the save is always archived  
+  This feature works with auto and quick saves as well 
+
 * Load quests (maps/saves) from all subfolders recursively  
-  Example:  
+  Example:
 ```
   Export
   |-In Gold We Trust.sg
@@ -26,12 +34,16 @@ Added proper windowed mode and several upscale filters for better gaming on mode
     | Subfolder
       |-Vaglan 1 - Highlands.sg
 ```
-* Add simple zoom on Ctrl+Wheel
-* Update external dependecies (libpng and zlib)
+* Add simple zoom on `Ctrl+Wheel`
+* Remove external dependecies (libpng and zlib)
 
-### [DisciplesGL_1.90](./../../raw/refs/heads/main/DisciplesGL_2.0.0-dev.7z)
+### [DisciplesGL_1.90](./../../raw/refs/heads/main/DisciplesGL_1.90.7z)
 
 * Latest stable build
+
+> [!NOTE]
+> This repository is a fork of https://github.com/Verokster/DisciplesGL  
+> Verokster aka Verok is the original author of all code up to version 1.90
 
 ## Features & fixes
 * Games render via OpenGL
@@ -42,8 +54,12 @@ Added proper windowed mode and several upscale filters for better gaming on mode
 * AI thinks much faster
 * 32bpp rendering
 * Added selection of any resolutions (4x3, 16x10, 16x9 ...) up to 4-8K
-* Disciples II: Added option to select widescreen battle window
-* Disciples II: Added new borders image for ingame windows/dialogs. Thanks to Мотлин.
+* Disciples II: 
+    * Load quests from all subfolders recursively
+    * Extended quick save
+    * Added option to archive all saves
+    * Added option to select widescreen battle window
+    * Added new borders image for in game windows/dialogs. Thanks to Мотлин.
 
 ## Supported games and versions
 * Disciples I: Sacred Lands
@@ -55,17 +71,17 @@ Added proper windowed mode and several upscale filters for better gaming on mode
 
 ## Installation
 ### Disciples I
-* Make sure Disciple.exe doesn't use any compability modes (especially for GOG releases), or just rename it (e.g. Game.exe)
+* Make sure Disciple.exe doesn't use any compatibility modes (especially for GOG releases), or just rename it (e.g. Game.exe)
 * Download installation file below
-* Launch this file and select a game root folder, where the game was previously installed
+* Extract archive into game folder and replace existing files
 * Launch Config.exe from the game "\EXE\" folder and make sure DirectDraw option is checked
 * Launch Disciple.exe
 * Have fun ;)
 
 ### Disciples II
-* Make sure Discipl2.exe doesn't use any compability modes (especially for GOG releases), or just rename it (e.g. Game.exe)
+* Make sure Discipl2.exe doesn't use any compatibility modes (especially for GOG releases), or just rename it (e.g. Game.exe)
 * Download installation file below
-* Launch this file and select game root folder, where the game was previously installed
+* Extract archive into game folder and replace existing files
 * Launch ConfigEditor.exe from the game folder and make sure Direct3D option is unchecked
 * Launch Discipl2.exe
 * Have fun ;)
