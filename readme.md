@@ -7,7 +7,7 @@ Added proper windowed mode and several upscale filters for a better gaming exper
 
 ## Download
 
-### [DisciplesGL_2.0.0-dev.4](./../../raw/refs/heads/main/DisciplesGL_2.0.0-dev.4.7z)
+### [DisciplesGL_2.0.0-beta.1](./../../raw/refs/heads/main/DisciplesGL_2.0.0-beta.1.7z)
 * Add `Ctrl+Q` hotkey to add an auto-incremented index to quick save  
   Example: `QuickSave001.sg`
 * Add `Archive saves` option  
@@ -40,10 +40,6 @@ Added proper windowed mode and several upscale filters for a better gaming exper
 ### [DisciplesGL_1.90](./../../raw/refs/heads/main/DisciplesGL_1.90.7z)
 
 * Latest stable build
-
-> [!NOTE]
-> This repository is a fork of https://github.com/Verokster/DisciplesGL  
-> Verokster aka Verok is the original author of all code up to version 1.90
 
 ## Features & fixes
 * Games render via OpenGL
@@ -85,3 +81,7 @@ Added proper windowed mode and several upscale filters for a better gaming exper
 * Launch ConfigEditor.exe from the game folder and make sure Direct3D option is unchecked
 * Launch Discipl2.exe
 * Have fun ;)
+
+> [!NOTE]
+> This repository is a fork of https://github.com/Verokster/DisciplesGL  
+> Verokster aka Verok is the original author of all code up to version 1.90
