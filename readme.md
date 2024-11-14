@@ -7,7 +7,7 @@ Added proper windowed mode and several upscale filters for a better gaming exper
 
 ## Download
 
-### [DisciplesGL_2.0.0-beta.1](./../../raw/refs/heads/main/DisciplesGL_2.0.0-beta.1.7z)
+### [DisciplesGL_2.0.0](./../../raw/refs/heads/main/DisciplesGL_2.0.0.7z)
 * Add `Ctrl+Q` hotkey to add an auto-incremented index to quick save  
   Example: `QuickSave001.sg`
 * Add `Archive saves` option  
