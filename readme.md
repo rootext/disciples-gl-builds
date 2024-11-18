@@ -7,12 +7,11 @@ Added proper windowed mode and several upscale filters for a better gaming exper
 
 ## Download
 
-### [DisciplesGL_2.0.0](./../../raw/refs/heads/main/DisciplesGL_2.0.0.7z)
+### [DisciplesGL_2.0.1](./../../raw/refs/heads/main/DisciplesGL_2.0.1.7z)
 * Add `Ctrl+Q` hotkey to add an auto-incremented index to quick save  
   Example: `QuickSave001.sg`
-* Add `Archive saves` option  
-  If enabled, all saved games, including auto saves and quick saves, are archived with the name
-  `~name-date-time-turn.sg` in the Archive directory  
+* Add option `Archive saves` to archive all saved games, including auto saves and quick saves.  
+  Archives are saved with the name `~$name-$date-$time-$turn.sg` in the `Archive\$date` directory  
   Example:
 ```
   Archive
@@ -24,7 +23,7 @@ Added proper windowed mode and several upscale filters for a better gaming exper
 * If `Shift` key is presed, the save is always archived  
   This feature works with auto and quick saves as well 
 
-* Load quests (maps/saves) from all subfolders recursively  
+* Add option `Scenarios\Include subdirectories` to load quests (maps/saves) from all subdirectories recursively  
   Example:
 ```
   Export
